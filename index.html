@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/b7cdfc33be.js" crossorigin="anonymous"></script>	
+	<title>personal Portfolio</title>
+	
+	<style>
+
+	  * {
+			box-sizing: border-box;
+		}
+	
+		.container {
+			background-color:#d6d3bd;
+			max-width: 100%;
+			margin: auto;
+			padding: 45px;
+		}
+		
+		h1 {
+			color:"#012741";
+			text-align: center;
+		}
+		
+		a {
+			text-decoration: none;
+			color:rgb(97, 22, 22);
+		}
+		
+		a:hover {
+			color: rgb(15, 6, 116);
+		}
+		a img{
+			opacity: 1;
+		}
+		a:hover img {
+        opacity: 0.5;
+		}
+		
+		p {
+			display: -webkit-box;
+			-webkit-box-orient: vertical;
+			-webkit-line-clamp: 4;
+			overflow: hidden;
+	
+		}
+		
+		.row {
+			margin: 0px -18px;
+			padding: px;
+		}
+		
+		.row > .column {
+			padding: 3px;
+		}
+		
+		.column {
+			float: left;
+			width: 25%;
+		}
+		
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+		
+		/* window size 850 width set */
+		@media screen and (max-width: 850px) {
+			.column {
+				width: 50%;
+			}
+		}
+	
+		/* window size 400 width set */
+		@media screen and (max-width: 400px) {
+			.column {
+				width: 100%;
+			}
+		}
+	    #button :hover {
+		background-color:#48221e;
+		color: rgb(253, 252, 252);
+	    }
+		#contact {
+		width: 100%;
+		background-image: url("BC.jpg");
+		background-attachment:fixed;
+        background-size: cover;
+	    }
+	    #container{
+		width: 50%;
+	   }
+        #container{
+		width: 50%;
+	   }
+       .contact h3{
+        text-align: center;
+        margin-top: 2em;
+        }
+ 
+       .contact p{
+        text-align: center;
+        margin-top: 2em;
+        padding-top: 1em;
+       }
+	  
+
+       .top{
+        text-align:right;
+        margin-right:1em;
+        list-style-type: none;
+        padding-bottom:  1em;
+       }
+      .top a{
+       color: "#012741";
+    
+       }
+     .top :hover{
+     color:rgb(15, 6, 116);     
+      }
+     .footer2{
+	max-width: 100%;
+	margin: auto;
+    display:flex;
+    flex-direction: column;
+    align-self:center;
+    text-align: center;
+    align-content: center;
+    margin:auto;
+    background-color:#d6d3bd;
+      }
+    .social-wrap{
+     width: 100%;
+     height: 12vh;
+     }
+    .copyright{
+    width: 100vw;
+    height: 10vh;
+    align-content: center; 
+    display: grid;
+    grid-template-columns: .35fr .5fr;
+    }
+    .copyright a{
+     color: rgb(97, 22, 22);
+     font-size: 12px;
+     text-align: end;
+     margin-top: .5em;
+    }
+    .copyright a:hover{
+     color: rgb(15, 6, 116);
+   }
+    .copyright p{
+    color: rgb(97, 22, 22);
+    font-size: 12px;
+    font-style: normal;
+    align-self: center;
+    margin-top: .5em;
+   }
+    .social ul{
+    width: 60vw;
+    display:grid;
+    grid-template-columns: repeat(4, .25fr);
+    text-align: center; 
+    justify-self:flex-start;
+    align-self:flex-start;
+    padding:0;
+    margin: auto;
+    
+    }
+    .social ul li{
+    list-style-type: none;
+    margin:auto;
+    align-content: center;
+    text-align: center; 
+    justify-self:center;
+    align-self: center;
+    }
+    .social a{
+    color: rgb(97, 22, 22); 
+	font-size: 25px;      
+    }
+    .social a:hover{
+    color: rgb(15, 6, 116);
+    }
+@media screen and (min-width: 56.26em)
+{
+	#contact {
+		width: 100%;
+		background-image: url("BC.jpg");
+		background-attachment: fixed;
+        background-size: cover;
+	    }
+	#container{
+		width: 50%;
+	}
+    .footer2{
+        width: 100%;
+        background-color:#d6d3bd;
+     }
+     .social-wrap{
+         width: 100%;
+         height: 10vh;
+         display: grid;
+         grid-template-columns:1.5fr .8fr ;
+         background-color:"#d6d3bd";
+     }
+     .copyright{
+        width: 40vw;
+        align-content:flex-end;
+        display: grid;
+        grid-template-columns: .6fr 2.5fr;
+        align-self:flex-end;
+    
+    }
+     .copyright a{
+         color: rgb(97, 22, 22);
+         font-size: 16px;
+         margin-top: .1em;
+     }
+     .copyright a:hover{
+         color: rgb(15, 6, 116);
+     }
+     .copyright p{
+        color: "#012741";
+        font-size: 16px;
+        font-style: normal;
+        align-content: left;
+        margin-top: .1em;
+    }
+    .social ul{
+        width: 40vw;
+        align-content:center;
+        align-self:flex-start;
+        display:grid;
+        grid-template-columns: repeat(4, .15fr);
+        margin-left: 30px;
+        margin-top: 1em;
+    }
+    .social li{
+        list-style-type: none;
+    }
+    .social a{
+        color: rgb(97, 22, 22);    
+    }
+    .social a:hover{
+        color: rgb(15, 6, 116);
+    }
+	.top{
+    text-align:right;
+    margin-right:1em;
+    list-style-type: none;
+    padding-bottom: 1em;
+ }
+}
+	</style>
+</head>
+
+<body>
+	<!--Header(start)-->
+	<table id="header" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="#d6d3bd">
+		<tr>
+			<td>
+				<table border="0" cellpadding="5"
+					cellspacing="0" width="90%" align="center">
+					<tr>
+				
+						<td>
+							<a href="#home" style="text-decoration:none">
+								<font face="Verdana" size="4" color="#012741">
+									Home
+								</font>
+							</a>
+						</td>
+
+						<td>
+							<a href="#about" style="text-decoration:none">
+								<font face="Verdana" size="4" color="#012741">
+									About
+								</font>
+							</a>
+						</td>
+
+						<td>
+							<a href="#projects" style="text-decoration:none">
+								<font face="Verdana" size="4" color="#012741">
+									Projects
+								</font>
+							</a>
+						</td>
+
+						<td>
+							<a href="#achievements" style="text-decoration:none">
+								<font face="Verdana" size="4" color="#012741">
+									Experiences
+								</font>
+							</a>
+						</td>
+
+						<td>
+							<a href="#contact" style="text-decoration:none">
+								<font face="Verdana" size="4" color=
+								"#012741">
+									Contact
+								</font>
+							</a>
+						</td>
+
+						<td width="20%">
+							
+						</td>
+						<td align="right">
+							<img src="Personal Logo1.svg" alt="s" width="29px">
+							<font face="Comic sans MS" size="5">
+								<b>Sophia Shang</b>
+							</font>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Header(end)-->
+
+	<!--Home(start)-->
+	<table id="home" border="0" width="100%"
+		cellpadding="0" cellspacing="10" bgcolor="#012741">
+		<tr>
+			<td>
+				<table border="0" cellpadding="5"
+					cellspacing="0" width="90%" align="center" >
+					<tr>
+						<td align="center" valign="middle">
+							<h3>
+								<font face="Times New Roman"
+									size="8" color="#d6d3bd" >
+									Web designer and Developer
+								</font>
+							</h3>
+
+							<h2>
+								<font face="Verdana" size="4"
+									color="#d6d3bd">
+									shangsophia2020@gmail.com
+									<hr color="#d6d3bd" width="100">
+									609-865-4231 
+									<hr color="#d6d3bd" width="100">
+								</font>
+							</h2>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Home(end)-->
+
+	<!--About(start)-->
+	<table id="about" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="#012741">
+		<tr>
+			<td>
+			    <table border=0" cellpadding="5"
+					cellspacing="0" width="85%" align="center">
+					<tr>
+						<td height="150" align="center"
+							valign="middle" colspan="2">
+							<font face="Verdana" size="6"
+								color="#d6d3bd">
+								About Me
+							</font>
+						</td>
+					</tr>
+
+					<tr>
+						<td class="text" width="70%">
+							<font face="Verdana" size="4"
+								color="#d6d3bd">
+								Thanks for your interest, here
+								is a quick story of me.
+                                <br><br>
+								Hello! I’m Sophia Shang a Web Designer & Developer. After graduating from university in China, I worked in a college as a fashion design teacher for 10 years. But in 2020, I went back to college again, started studying web design and web development, my experience in fashion design helped. <br><br>I was able to help the company consistently hit its targets and grow their brand in the industry. I am passionate about the arts and strive to excellent in my professional work.<br><br>
+                                Now I am studying graphic design, web design and web development in Mercer County Community College. I can proficiently use PHOTOSHOP, ILLUSTRATOR, and ADOBE XD... And mastered the knowledge of HTML,CSS, and JS. 
+                                <br><br>
+								Thank you!
+								<br><br><br>
+								<b>Sophia Shang</b>
+							</font>
+						</td>
+						<td class=
+						"picture" width="30%">
+							<img src="opjing.jpg" width="278px" align="right">
+						</td>
+					</tr>
+			    </table>
+				<hr color="#d6d3bd">
+				<hr color="#d6d3bd">
+				<hr color="#d6d3bd">
+			</td>
+		</tr>
+	</table>
+	<!--About(end)-->
+
+    <!-- project(start) -->
+	<div class="container" id="projects" align="center">
+				<font face="Verdana" size="6"
+					color="#402820" >
+					Projects
+				</font>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+		
+		<div class="row">
+			<div class="column">
+				<div class="content">
+					
+					<a href="webpageD/webpage.html" target="_blank"><img src="wd8.png" alt="web design" style="height: 500px;width:250px"></a>
+					<h3>
+						<a href="webpageD/webpage.html" target="_blank">Webpage Design</a>
+					</h3>
+				</div>
+			</div>
+			<div class="column">
+				<div class="content">
+					
+						<a href="advertizeD/addesign.html" target="_blank"> <img src="Adesign8.png"
+							alt="advertisingdesign" style="height: 500px; width:250px;"> </a>
+					<h3>
+						<a href="advertizeD/addesign.html" target="_blank">Advertizement Design</a>
+					</h3>
+
+				</div>
+			</div>
+			<div class="column">
+				<div class="content">
+					
+						<a href="webdevelopment.html" target="_blank"><img src="wd6.png"
+							alt="Website design" style="height: 500px; width:250px"></a>
+					<h3>
+						<a href="webdevelopment.html" target="_blank">Website Development</a>
+					</h3>
+			
+				</div>
+			</div>
+			
+			<div class="column">
+				<div class="content">
+					
+						<a href="graphicD/index8.html" target="_blank"><img src="1.jpg"
+							alt="graphic design" style="height: 500px; width:250px"></a>
+					<h3>
+						<a href="graphicD/index8.html" target="_blank">Graphic Design</a>
+					</h3>
+					
+				</div>
+			</div>
+			
+		</div>
+	</div>
+								
+	<!--Projects(end)-->
+
+	<!--Achievement(start)-->
+	<table id="achievements" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="#48221e">
+		<tr>
+			<td>
+				<table border="0" cellpadding="15"
+					cellspacing="0" width="80%" align="center">
+					<tr>
+						<td height="150" align="center" valign="middle">
+							<font face="Verdana" size="6" color="#d6d3bd">
+								Experiences
+							</font>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<font face="Verdana" size="4" color="#d6d3bd">
+								<ul>
+									<li>
+										<b>Teacher</b>
+										<ul>
+											<li>
+												11/1996 to 09/2003
+											</li>
+											<li>
+												Shenyang second Apparel Art School
+                                                Fashion design teacher
+
+											</li>
+										</ul>
+									</li>
+									<br>
+									<br>
+									<br>
+									<br>
+									<li>
+										<b>Teacher</b>
+										<ul>
+											<li>
+												09/2003 to 11/2010
+											</li>
+											<li>
+												Shenyang Equipment Manufacture Engineering School
+                                                Art department Fashion design teacher
+   
+											</li>
+										</ul>
+									</li>
+									<br>
+									<br>
+									<br>
+									<br>
+
+									<li>
+										<b>Shipper</b>
+										<ul>
+											<li>
+												01/2018 to 09/2018
+									        </li>
+											<li>
+												GenScript Biotech 
+											</li>
+											
+										</ul>
+									</li>
+									<br>
+									<br>
+									<br>
+									<br>
+									<li>		
+										<b>Archivist</b>
+										<ul>
+											    <li>
+													6/1/2022 to 9/2/2022
+												</li>
+												<li>
+													Primera Analytical Solutions Corp. 
+												</li>
+										</ul>
+										<br>
+										<br>
+										<br>
+										<br>
+									
+								    </li>
+
+								</ul>
+
+							</font>
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Achievement(end)-->
+
+
+	<!--Contact(start)-->
+	<table id="contact" border="0" width="100%"
+		cellpadding="0" cellspacing="0" bgcolor="#012741">
+		<tr>
+			<td>
+				<table id="container" border="0" cellpadding="15"
+					cellspacing="0"  align="center">
+					<tr>
+						<td height="150" align="center"
+							valign="middle" colspan="2">
+							<font face="Verdana" size="6" color="white">
+								Contact
+							</font>
+						</td>
+					</tr>
+
+					<tr>
+						<td align="center" valign="top">
+							<table border="0" width="50%" cellpadding="25"
+								cellspacing="0" align="center" bgcolor="#48221e">
+								<tr>
+									<td width="30%">
+										<font face="Verdana" size="4"
+											color="#d6d3bd">
+											Name
+										</font>
+									</td>
+									<td width="70%">
+										<font face="Verdana" size="4"
+											color="#d6d3bd">
+											<input type="text" size="50">
+										</font>
+									</td>
+								</tr>
+								<tr>
+									<td width="30%">
+										<font face="Verdana" size="4"
+											color="#d6d3bd">
+											Email
+										</font>
+									</td>
+									<td width="70%">
+										<font face="Verdana" size="4"
+											color="#d6d3bd">
+											<input type="email" size="50">
+										</font>
+									</td>
+								</tr>
+								<tr>
+									<td width="30%">
+										<font face="Verdana" size="4"
+											color="#d6d3bd">
+											Number
+										</font>
+									</td>
+									<td width="70%">
+										<font face="Verdana" size="4"
+											color="#d6d3bd">
+											<input type="number" size="12">
+										</font>
+									</td>
+								</tr>
+								<tr>
+									<td width="30%">
+										<font face="Verdana" size="4"
+											color="#d6d3bd">
+											Message
+										</font>
+									</td>
+									<td width="70%">
+										<font face="Verdana" size="4"
+											color="#d6d3bd">
+											<textarea rows="5"
+												cols="40">
+											</textarea>
+										</font>
+									</td>
+								</tr>
+								<table id="button" cellspacing="30">
+								<tr>
+									<td align="center">
+										<button type="Submit">
+										<font
+											face="Verdana"
+											size="4.5" color="#48221e">
+												<b>Submit</b>
+										 </font>
+										</button>
+									 </td>
+								</tr>
+								</table>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							
+							
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+	<!--Contact(end)-->
+			
+	<!--Footer Section-->   
+	<div class="footer2">
+		   <div class="social-wrap">
+			   <div class="social">
+				   <ul>
+					   <li><a href="https://twitter.com/?lang=en" target="_blank"><i class="fab fa-twitter"></i></a></li>
+					   <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+					   <li><a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
+					   <li><a href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a></li>                
+				   </ul>
+			   </div>
+			   <div>
+			   <div class="copyright">
+				   <a href="https://en.wikipedia.org/wiki/Privacy_policy" target="_blank">Private policy</a>
+				   <p>©Copyright 2023 by Sophia Shang.All rights reserved.</p>
+			   </div>
+			   <div class="top">
+					<a href="#header"> <b>TOP</b> </a>
+			   </div>
+		       </div>
+		</div>
+
+</body>
+
+</html>
